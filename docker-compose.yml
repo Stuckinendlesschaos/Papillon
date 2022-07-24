@@ -1,0 +1,11 @@
+version: '3'
+services:
+  web:
+    build: ./web
+    tty: true
+    stdin_open: true
+    ports:
+      - "12233:12233"
+    network_mode: "host"
+    env_file:
+      - ./api.env

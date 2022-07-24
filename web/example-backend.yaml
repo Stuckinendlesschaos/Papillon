@@ -1,0 +1,8 @@
+Name: Papillon
+Addr: 0.0.0.0:2233
+WeCom:
+  DefaultAddr: https://qyapi.weixin.qq.com/cgi-bin/webhook/send?key=xxx
+UserData:
+  - ./data/userid.csv
+Gitlab:
+  AccessToken: xxx
