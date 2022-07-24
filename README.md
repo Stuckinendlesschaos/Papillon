@@ -1,7 +1,7 @@
 # Papillon
 ## Overview
 
-![](papillon.png)
+![](web/papillon.png)
 
 This is a webhook parser between gitlab and other IM (Intra-Message).
 
