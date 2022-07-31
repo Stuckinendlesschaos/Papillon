@@ -47,8 +47,8 @@ $ vi api.env
 ### Start the container
 ``` bash
 $ docker compose up -d
-$ docker exec gitrabbit-web-1 go build
-$ docker exec gitrabbit-web-1 go run gitrabbit
+$ docker exec papillon-web-1 go build
+$ docker exec papillon-web-1 go run papillon
 ```
 不知道为什么 Dockerfile 里面写好的命令不会执行，有没有大神知道。这样就能去掉 exec 这两行了
 

@@ -1,26 +1,20 @@
 package conf
 
 import (
-	"io/ioutil"
 	"testing"
 
 	"github.com/smartystreets/goconvey/convey"
-	"gopkg.in/yaml.v2"
 )
 
 func TestLoadConfig(t *testing.T) {
-	convey.Convey("Given file path to Load Config func", t, func() {
-		file := "../example-api.env"
+	convey.Convey("Given yaml file path to Load Config func", t, func() {
+		file := "../example-backend.yaml"
 		LoadConfig(file)
-		file = "../example-backend.yaml"
+	})
+	// goconvey can't execute in following statement  because sys_call
+	convey.Convey("Given error file path to Load Config func:", t, func() {
+		file := "../example-backend.env"
 		LoadConfig(file)
-		var Config CONFIG
-		content, err := ioutil.ReadFile(file)
-		convey.So(err, convey.ShouldBeNil)
-		err = yaml.Unmarshal(content, &Config)
-		// convey.So(err, convey.ShouldBeNil)
-		// Config.Gitlab.AccessToken = ""
-
 	})
 
 }

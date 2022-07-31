@@ -34,12 +34,12 @@ type WECOM struct {
 func LoadConfig(file string) {
 	content, err := ioutil.ReadFile(file)
 	if err != nil {
-		log.Fatalf("load yaml file error, err:%s", err)
+		log.Fatalf("err: %s", err)
 	}
 
 	err = yaml.Unmarshal(content, &Config)
 	if err != nil {
-		log.Fatalf("unmarshal yaml file error, err:%s", err)
+		log.Fatalf("err: %s", err)
 	}
 
 	if Config.Gitlab.AccessToken == "" {
