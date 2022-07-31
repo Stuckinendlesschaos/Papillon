@@ -3,9 +3,9 @@ package tag
 import (
 	"encoding/json"
 	"fmt"
-	"gitrabbit/event"
-	"gitrabbit/event/merge"
-	gitlab "gitrabbit/gitlab"
+	"papillon/event"
+	"papillon/event/merge"
+	gitlab "papillon/gitlab"
 )
 
 func Handle(buf *[]byte) (*event.MessageNotify, error) {

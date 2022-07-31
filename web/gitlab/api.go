@@ -4,9 +4,9 @@ import (
 	"encoding/json"
 	"errors"
 	"fmt"
-	"gitrabbit/conf"
 	"io/ioutil"
 	"net/http"
+	"papillon/conf"
 )
 
 // This file was generated from JSON Schema using quicktype, do not modify it directly.

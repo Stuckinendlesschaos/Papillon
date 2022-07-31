@@ -21,7 +21,7 @@
 
 package output
 
-import "gitrabbit/event"
+import "papillon/event"
 
 //terminal is RobotFactory
 type Terminal interface {

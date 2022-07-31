@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	//"gitrabbit/event/merge_event"
 	"os"
 	"testing"
 )

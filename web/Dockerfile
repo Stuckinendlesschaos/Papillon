@@ -6,4 +6,4 @@ ENV GOPROXY=https://goproxy.cn
 ADD . /go/src
 RUN go mod tidy
 RUN go build
-CMD ["/go/src/gitrabbit"]
+CMD ["/go/src/papillon"]

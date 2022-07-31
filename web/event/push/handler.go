@@ -2,7 +2,7 @@ package push
 
 import (
 	"encoding/json"
-	"gitrabbit/event"
+	"papillon/event"
 )
 
 func Handle(j *[]byte) (*event.MessageNotify, error) {

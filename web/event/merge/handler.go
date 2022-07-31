@@ -3,7 +3,7 @@ package merge
 import (
 	"encoding/json"
 	"fmt"
-	"gitrabbit/event"
+	"papillon/event"
 )
 
 var (

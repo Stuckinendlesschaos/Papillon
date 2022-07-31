@@ -4,11 +4,11 @@ import (
 	"bytes"
 	"encoding/json"
 	"fmt"
-	"gitrabbit/conf"
-	"gitrabbit/event"
-	"gitrabbit/output"
 	"io/ioutil"
 	"net/http"
+	"papillon/conf"
+	"papillon/event"
+	"papillon/output"
 )
 
 type Wecom struct {

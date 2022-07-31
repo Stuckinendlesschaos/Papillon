@@ -3,9 +3,9 @@ package release
 import (
 	"encoding/json"
 	"fmt"
-	"gitrabbit/event"
-	"gitrabbit/event/merge"
-	gitlab "gitrabbit/gitlab"
+	"papillon/event"
+	"papillon/event/merge"
+	gitlab "papillon/gitlab"
 )
 
 //处理Release的事件
